@@ -1,0 +1,14 @@
+1. Always analyze the constraints first
+i.e. When you see "sorted array," immediately ask: "What does being sorted give me for free?"
+
+2. Look for the "minimal information needed" pattern
+Your first solution tracked lastSeen globally, but the sorted property means you only ever need to know about the immediately previous element. 
+Ask yourself: "What's the smallest amount of state I need to track?"
+
+3. Practice the "constraint-driven simplification" mindset
+For each constraint, think: "How does this change my approach?"
+
+4. Study similar problems
+You'll see solution components reused and combined in different ways 
+
+

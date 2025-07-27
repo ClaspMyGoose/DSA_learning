@@ -1,0 +1,23 @@
+1. Always analyze the constraints first
+i.e. When you see "sorted array," immediately ask: "What does being sorted give me for free?"
+
+Sorted arrays let you:
+
+Compare adjacent elements to detect changes/duplicates
+Use binary search
+Apply two pointers effectively
+Make assumptions about relative positions
+
+2. Look for the "minimal information needed" pattern
+Your first solution tracked lastSeen globally, but the sorted property means you only ever need to know about the immediately previous element. 
+
+3. Practice the "constraint-driven simplification" mindset
+For each constraint, think: "How does this change my approach?"
+
+Sorted → adjacent comparisons instead of global tracking
+In-place → two pointers instead of extra arrays
+Return count → left pointer naturally becomes the count
+
+4. Study similar problems
+Problems like "Remove Duplicates from Sorted List" (linked lists) use the same current.val != current.next.val pattern. 
+The more you see this adjacent-comparison pattern across different data structures, the more automatic it becomes.
